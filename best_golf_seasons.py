@@ -6,7 +6,6 @@ import numpy as np
 from time import sleep
 
 #get all tournament names from the home page
-
 base_url = "http://www.golfstats.com"
 metadata_base = requests.get(base_url).text
 base_soup = BeautifulSoup(metadata_base, "html.parser")
