@@ -1,3 +1,8 @@
+"""
+This script will scrape golfstats.com to Z-Score all the leaderboards
+from 1970-2015 to determine who had the most dominant seasons in golf history
+"""
+
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
