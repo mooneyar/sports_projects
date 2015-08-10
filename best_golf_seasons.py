@@ -54,7 +54,7 @@ i = 0
 for year in years:
     d_year = defaultdict(list)
 
-    for tournament in alt_tourneys:
+    for tournament in tournaments:
         soup = get_text(year, tournament)
 
         #if there's no table, the tournament probably didn't happen that year,
