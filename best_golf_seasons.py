@@ -70,7 +70,7 @@ for year in years:
             for player in label.find_all('a'):
                 players.extend(player.contents)
 
-        headers = [th.contents[0] for th in soup.find_all('th')[2:-2]]
+        headers = [th.contents[0] for th in soup.find_all('th')[2:13]]
 
         data = [[td.contents[0] for td in tr.find_all('td')[2:13]] for tr in soup.find_all('tr')[2:]]
 
